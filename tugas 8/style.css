@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container1{
+    display: flex;
+}
+.container2{
+    padding: 0px 0px;
+}
+.navbar{
+    text-align: left;
+    background-color: plum;
+    padding: 25px 20px 490px 100px;
+    align-content: end;
+}
+.header{
+    background-color: yellow;
+    padding: 25px 515px;
+}
+.footer{
+    background-color: yellow;
+    padding: 25px 250px;
+    align-content: end;
+}
+.aras{
+    display: flex;
+    justify-content: end;
+}
+.article{
+    text-align: left;
+    background-color: white;
+    padding: 70px 100px;
+}
+.aside{
+    background-color: aqua;
+    padding: 25px 20px 480px 100px;
+}
