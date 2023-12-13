@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Small Business - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            body{
+                margin: 0px;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #3901A0; color: white;
+            }
+            .text-tittle{
+                font-size: 18px !important;
+            }
+            .btn-red{
+                background-color: crimson;
+            }
+            .btn-blue{
+                background-color: cornflowerblue;
+            }
+            h2{
+                text-align: center;
+                font-weight: 100;
+                margin-top: 50px;
+            }
+            table{
+                margin: 30px auto;
+                width: fit-content;
+            }
+            input, select{
+                height: 25px;
+            }
+            input, select, textarea{
+                border-radius: 5px;
+                border: 1px solid gray;
+            }
+            td{
+                padding: 6px;
+            }
+            label{
+                font-size: 14px;
+                display: block;
+                text-align: end;
+            }
+            button{
+                padding: 7px 10px;
+                border: 0;
+                border-radius: 4px;
+                color: white;
+                margin-bottom: 50px;
+            }
+        </style>   
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container px-1">
+                <img src="assets/ikon.png" width="60" style="margin-right: 10px;" alt="">
+                <a class="navbar-brand mx-2" style="font-weight: 500;" href="index.html">Verth</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="formpesan.html">Pesan sekarang</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h2>Pesan Sekarang</h2>
+        <table>
+            <tr>
+                <td><label for="Nama">Nama</label></td>
+                <td><input type="text" name="Nama" id="Nama"></td>
+            </tr>
+            <tr>
+                <td><label for="Alamat">Alamat</label></td>
+                <td><textarea name="Alamat" id="Alamat" cols="30" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="Telphone">Telphone</label></td>
+                <td><input type="number" name="Telphone" id="Telphone"></td>
+            </tr>
+            <tr>
+                <td><label for="Jabatan">Keperluan desain</label></td>
+                <td><select name="Jabatan" id="Jabatan">
+                    <option value="">- pilih</option>
+                    <option value="rumah">Rumah</option>
+                    <option value="kantor">Kantor</option>
+                    <option value="apartemen">Apartemen</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="Tema">Jelaskan</label></td>
+                <td><textarea name="Tema" id="Tema" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" class="btn-blue">Simpan</button>
+                    <button type="reset" class="btn-red">Reset</button>
+                </td>
+            </tr>
+        </table>
+        <footer class="py-4 bg-primary">
+            <div class="container px-4 px-lg-5">
+                <p class="m-0 text-center">Copyright &copy; Verth 2023</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
