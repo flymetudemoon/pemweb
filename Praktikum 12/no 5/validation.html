@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <table>
+        <tr>
+            <td><label for="nama">Nama Pelanggan</label></td>
+            <td><input type="text" id="nama"></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="text" id="email"></td>
+        </tr>
+        <tr>
+            <td><label for="jam">Jam Keberangkatan</label></td>
+            <td><input type="time" id="jam"></td>
+        </tr>
+        <tr>
+            <td><label for="tujuan">Tujuan Keberangkatan</label></td>
+            <td><input type="text" id="tujuan"></td>
+        </tr>
+        <tr>
+            <td><label for="tiket">Jumlah Tiket</label></td>
+            <td><input type="number" id="tiket"></td>
+        </tr>
+        <tr>
+            <td><button onclick="validation()">Submit</button></td>
+        </tr>
+    </table>
+    <div id="form"></div>
+    <script>
+        function validation(){
+            const nama = document.getElementById("nama")
+            const email = document.getElementById("email")
+            const jam = document.getElementById("jam")
+            const tujuan = document.getElementById("tujuan")
+            const tiket = document.getElementById("tiket")
+            const form = document.getElementById("form")
+
+            form.innerHTML += nama.value + "<br>"
+            form.innerHTML += email.value + "<br>"
+            form.innerHTML += jam.value + "<br>"
+            form.innerHTML += tujuan.value + "<br>"
+            form.innerHTML += tiket.value + "<br>"
+
+            if(nama.value == "")
+            alert("nama wajib diisi")
+            if(email.value == "")
+            alert("email wajib diisi")
+            if(jam.value == "")
+            alert("jam wajib diisi")
+            if(tujuan.value == "")
+            alert("tujuan wajib diisi")
+            if(tiket.value == "")
+            alert("tiket wajib diisi")
+        }
+    </script>
+</body>
+</html>
